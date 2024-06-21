@@ -1,0 +1,66 @@
+
+#left-sidebar {
+
+    
+
+    a {
+        text-decoration: none;
+        color: black;
+    }
+    
+    div {
+        // border: solid 2px red;
+        display: flex;  
+        gap: 5%;
+        justify-content: start;
+        align-items: center;
+        // cursor: pointer;
+
+        height: 8%;
+        padding-left: 5%;
+
+
+        i {
+            font-size: 24px;
+        }
+
+        p {
+            font-size: 16px;
+            font-weight: 500;
+        }
+    }
+
+    #logo {
+        font-size: 32px;
+    }
+
+   
+
+    .buttonContainer {
+
+        // border: solid 2px red;
+        height: 5%;
+        width: 65%;
+
+        :hover {
+            cursor: pointer;
+            background-color: rgb(24, 122, 187);
+        }
+    }
+ 
+}
+    
+    
+.button {
+    height: 100%;
+    width: 100%;
+    font-size: 16px;
+    border-radius: 20px;
+    border: none;
+    background-color: rgb(29,155,240);
+    color: white; 
+}
+
+#logout {
+    cursor: pointer;
+}

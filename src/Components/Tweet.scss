@@ -1,0 +1,119 @@
+
+
+#tweet {
+    height: 25%;
+    width: 100%;
+
+    border: solid 2px gray;
+    border-radius: 8px;
+    // border-bottom: 0;
+
+
+
+    .top {
+        height: 70%;
+        width: 100%;
+        padding: 0 1%;
+        // border: solid 1px red;
+
+        display: flex;        
+
+        .left {
+            height: 100%;
+            width: 10%;
+
+            padding-top: 2%;
+            text-align: center;
+            // border: solid 1px red;
+
+                img {
+                    height: 50px;
+                    width: 50px;
+                    border-radius: 50%;
+                }
+
+        }
+
+        .right {
+            height: 100%;
+            width: 90%;
+
+            padding: 2% 1%;
+
+            // border: solid 2px cyan;
+
+            .up {
+                height: 30%;
+                width: 100%;
+
+                display: flex;
+                // align-items: center;
+                gap: 3%;
+
+                font-size: 16px;
+            }
+
+            .down {
+                height: 70%;
+                width: 100%;
+            }
+            
+            // border: solid 1px red;
+
+
+
+        }
+    }
+
+    .bottom {
+        height: 30%;
+
+        display: flex;
+        flex: 1;
+
+        border-top: solid 2px gray;
+
+        .left, .mid, .right, .end {
+            height: 100%;
+            // width: 100%;
+
+            // border: solid 2px red;
+
+            display: flex;
+            flex: 1;
+            gap: 5%;
+            justify-content: center;
+            align-items: center;
+
+            // border: solid 2px red;
+
+
+            i {
+
+                padding: 4px;
+                font-size: 20px;
+                cursor: pointer;
+            }
+
+            p {
+                font-size: 18px;
+                padding-bottom: 4px;
+            }
+        }
+
+        // .left {}
+        // .mid {}
+        // .right {}
+
+    // border: solid 1px red;
+
+    }
+}
+
+.active {
+    border-bottom: solid 4px  rgb(24, 122, 187);
+}
+
+.inactive {
+    border-bottom: transparent;
+}

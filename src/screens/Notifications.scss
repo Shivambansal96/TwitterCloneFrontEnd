@@ -1,0 +1,118 @@
+$primary-color: #007BFF;
+$secondary-color: #0056b3;
+$background-color: #f8f9fa;
+$hover-transition: 0.3s ease-in-out;
+
+.profile-page-container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    background-color: $background-color;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+    h1 {
+        color: $primary-color;
+    }
+
+    .section {
+        margin-bottom: 20px;
+        text-align: left;
+
+        h2 {
+            color: $primary-color;
+        }
+
+        input[type="file"] {
+            margin-top: 10px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: $hover-transition;
+
+            &:hover {
+                border-color: $primary-color;
+            }
+        }
+
+        .image-preview {
+            margin-top: 10px;
+            display: flex;
+            justify-content: center;
+
+            .image {
+                max-width: 100%;
+                max-height: 150px;
+                border-radius: 10px;
+                transition: transform $hover-transition;
+
+                &:hover {
+                    transform: scale(1.05);
+                }
+            }
+        }
+    }
+
+    .text-area {
+        width: 100%;
+        padding: 10px;
+        font-size: 16px;
+        box-sizing: border-box;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        transition: $hover-transition;
+
+        &:focus {
+            border-color: $primary-color;
+            outline: none;
+        }
+    }
+
+    .bio-preview {
+        margin-top: 10px;
+        text-align: left;
+
+        h3 {
+            color: $primary-color;
+        }
+    }
+
+    .save-button {
+        padding: 10px 20px;
+        font-size: 16px;
+        background-color: $primary-color;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color $hover-transition, transform $hover-transition;
+
+        &:hover {
+            background-color: $secondary-color;
+            transform: translateY(-2px);
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .profile-page-container {
+        padding: 10px;
+
+        .image-preview {
+            .image {
+                max-height: 100px;
+            }
+        }
+
+        .text-area {
+            font-size: 14px;
+        }
+
+        .save-button {
+            font-size: 14px;
+        }
+    }
+}

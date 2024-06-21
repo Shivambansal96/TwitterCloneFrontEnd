@@ -1,0 +1,58 @@
+
+
+#homepage {
+
+    display: flex;
+    justify-content: center;
+    padding-right: 5%;
+    // gap: 1%;
+    width: 99vw;
+
+    margin-top: 1%;
+    // padding: 0 12%;
+
+    
+}
+  
+#left-sidebar {
+    height: 97.5vh;
+    width: 20%;
+
+    position: fixed;
+    left: 8%;
+
+        a, i {
+            cursor: pointer;
+        }
+}
+
+#feed, #profile-feed {
+    height: 97.5vh;
+    width: 50%;
+}
+
+#right-sidebar {
+    height: 97.5vh;
+    width: 20%;
+
+    position: fixed;
+    right: 6%;
+}
+
+
+
+.avatar {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+}
+
+
+button {
+    cursor: pointer;
+}
+
+.active {
+    // color: ;
+    font-weight: bold;
+}

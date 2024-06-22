@@ -18,6 +18,10 @@ const ProfileComp = () => {
 
     const {user, profile} = useSelector(store=>store.user)
     const {id} = useParams();
+
+    // localStorage.setItem('user_id', id);
+
+    // console.log(id);
     const dispatch = useDispatch();
     
     useGetProfile(id)  
@@ -79,9 +83,9 @@ const ProfileComp = () => {
 
     }
 
-    const editProfileHandler = () => {
+    // const editProfileHandler = () => {
 
-    }
+    // }
 
 
     // extra 

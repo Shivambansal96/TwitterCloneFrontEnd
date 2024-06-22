@@ -11,6 +11,7 @@ const userSlice = createSlice({
     reducers:{
         getUser:(state, action) => {
             state.user = action.payload;
+            console.log(`GET_USER = ${state.user}`);
         },
         getOtherUsers:(state, action) => {
             state.otherUsers = action.payload;
@@ -24,7 +25,6 @@ const userSlice = createSlice({
                     return itemId !== action.payload;
                 })
             }
-
             else {
 
                 state.user.following.push(action.payload);

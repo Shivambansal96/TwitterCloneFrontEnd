@@ -40,7 +40,10 @@ const Login = () => {
                     headers: {
                         'Content-type': 'application/json'
                     },
-                    withCredentials: true
+                    // withCredentials: true
+                    // credentials: true
+                    
+
                 })
 
                     dispatch(getUser(res?.data?.user))
@@ -73,7 +76,7 @@ const Login = () => {
             toast.error('Password must be at least 8 characters long and include a number, a symbol, and a capital letter');
             return;
         }
-        
+
         try {
 
             e.preventDefault();

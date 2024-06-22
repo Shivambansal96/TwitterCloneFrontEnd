@@ -20,7 +20,7 @@ const CreatePost = () => {
     try {
 
       const res = await axios.post(`${TWEET_API_END_POINT}/create`, {description, id:user?._id}, {
-        withCredentials: true,
+        // withCredentials: true,
       });
 
       dispatch(getRefresh())

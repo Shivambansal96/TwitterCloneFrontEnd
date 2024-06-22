@@ -40,8 +40,7 @@ const Login = () => {
                     headers: {
                         'Content-type': 'application/json'
                     },
-                    // withCredentials: true
-                    // credentials: true
+                    withCredentials: true
                     
 
                 })
@@ -122,7 +121,7 @@ const Login = () => {
                 <span className="slider"></span>
                 <span className="card-side"></span>
                 <div className="flip-card__inner">
-                    <div className="flip-card__front">
+                    <div className="flip-card__front">     
                         <div className="title">Log in</div>
                         <form action="" className="flip-card__form">
                             <input type="email" value={email} onChange={((e) => setEmail(e.target.value))} placeholder="Email" name="email" className="flip-card__input" />

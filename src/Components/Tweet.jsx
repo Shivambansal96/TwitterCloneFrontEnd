@@ -12,21 +12,25 @@ import axios from 'axios';
 import { FaHeart } from "react-icons/fa";
 import { MdDeleteOutline } from "react-icons/md"; // outline
 import { MdDelete } from "react-icons/md";
+import Heart_icon from '../../../../../../../Downloads/bookmark.png'
+// import {Like_icon, Comment_icon, Bookmark_icon, Delete_icon} from '../assets/Tweet/'
 
 
 
 
 const Tweet = ({tweet}) => {
 
-    const like_icon = useRef();
+    // const like_icon = useRef();
 
     const {user} = useSelector(store=>store.user);
     const dispatch = useDispatch();
 
+    // <Heart_icon />
+
 
     const likeHandler = async(id) => {
 
-        like_icon.current.style.color = like_icon.current.style.color === 'black' ? 'red' : 'black'; 
+        // like_icon.current.style.color = like_icon.current.style.color === 'black' ? 'red' : 'black'; 
 
         try {
 
@@ -132,8 +136,10 @@ const Tweet = ({tweet}) => {
             </div>
 
             <div onClick={()=>likeHandler(tweet?._id)} className="mid">
-                {/* <i><FaRegHeart /></i> */}
-                <i ref={like_icon}><FaHeart /></i>
+                <i><FaHeart /></i>
+                {/* <i ref={like_icon}><FaHeart /></i> */}
+                {/* <i><Like_icon /></i> */}
+                {/* <i style={{height:'40px', width:'30px'}}><Heart_icon /></i> */}
                 <p>{tweet?.like?.length}</p>
             </div>
 

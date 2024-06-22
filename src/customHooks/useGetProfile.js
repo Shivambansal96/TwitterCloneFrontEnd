@@ -8,7 +8,7 @@ import { getMyProfile } from "../redux/userSlice";
 
 const useGetProfile = (id) => {
 
-    console.log(id);
+    // console.log(id);
 
     const dispatch = useDispatch();
 
@@ -17,12 +17,11 @@ const useGetProfile = (id) => {
         const fetchMyProfile = async() => {
 
             try {
-                console.log("ANDER");
                 const res = await axios.get(`${USER_API_END_POINT}/profile/${id}`, {
                     withCredentials: true
                 })
 
-                console.log(res);
+                // console.log(res);
     
                 dispatch(getMyProfile(res.data.user))
                 
@@ -30,7 +29,6 @@ const useGetProfile = (id) => {
                 console.log("errror");
                 console.log(error);        
             }
-            // console.log("ANDER");
 
         }
 

@@ -1,18 +1,4 @@
 
-npm i react-icons
-
-
-
-
-
-
-npm i axios react-hot-toast
-
-npm i @reduxjs/toolkit react-redux
-
-npm i redux-persist
-
-
 # Twitter Clone
 
 ## Overview
@@ -84,6 +70,19 @@ twitter-clone/
 ```bash
 git clone https://github.com/yourusername/twitter-clone.git
 cd twitter-clone
+```
+
+### Packages installed
+
+```bash 
+
+npm i react-icons
+
+npm i axios react-hot-toast
+
+npm i @reduxjs/toolkit react-redux
+
+npm i redux-persist
 ```
 
 ### Backend Setup

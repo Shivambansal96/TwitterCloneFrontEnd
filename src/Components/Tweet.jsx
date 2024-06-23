@@ -12,7 +12,7 @@ import axios from 'axios';
 import { FaHeart } from "react-icons/fa";
 import { MdDeleteOutline } from "react-icons/md"; // outline
 import { MdDelete } from "react-icons/md";
-import Heart_icon from '../../../../../../../Downloads/bookmark.png'
+// import Heart_icon from '../../../../../../../Downloads/bookmark.png'
 // import {Like_icon, Comment_icon, Bookmark_icon, Delete_icon} from '../assets/Tweet/'
 
 
@@ -137,7 +137,7 @@ const Tweet = ({tweet}) => {
 
             <div onClick={()=>likeHandler(tweet?._id)} className="mid">
                 <i><FaHeart /></i>
-                {/* <i ref={like_icon}><FaHeart /></i> */}
+                <i ref={like_icon}><FaHeart /></i>
                 {/* <i><Like_icon /></i> */}
                 {/* <i style={{height:'40px', width:'30px'}}><Heart_icon /></i> */}
                 <p>{tweet?.like?.length}</p>

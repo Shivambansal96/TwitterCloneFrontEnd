@@ -20,7 +20,7 @@ import { MdDelete } from "react-icons/md";
 
 const Tweet = ({tweet}) => {
 
-    // const like_icon = useRef();
+    const like_icon = useRef();
 
     const {user} = useSelector(store=>store.user);
     const dispatch = useDispatch();
@@ -30,7 +30,7 @@ const Tweet = ({tweet}) => {
 
     const likeHandler = async(id) => {
 
-        // like_icon.current.style.color = like_icon.current.style.color === 'black' ? 'red' : 'black'; 
+        like_icon.current.style.color = like_icon.current.style.color === 'black' ? 'red' : 'black'; 
 
         try {
 
@@ -136,8 +136,8 @@ const Tweet = ({tweet}) => {
             </div>
 
             <div onClick={()=>likeHandler(tweet?._id)} className="mid">
-                <i><FaHeart /></i>
-                {/* <i ref={like_icon}><FaHeart /></i> */}
+                {/* <i><FaHeart /></i> */}
+                <i ref={like_icon}><FaHeart /></i>
                 {/* <i><Like_icon /></i> */}
                 {/* <i style={{height:'40px', width:'30px'}}><Heart_icon /></i> */}
                 <p>{tweet?.like?.length}</p>
